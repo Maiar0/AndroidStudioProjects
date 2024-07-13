@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <Button
+        android:id="@+id/button_extraction_safe_zones"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/extraction_safe_zones"
+        android:layout_marginBottom="8dp" />
+
+    <Button
+        android:id="@+id/button_key_cards"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/key_cards"
+        android:layout_marginBottom="8dp" />
+
+    <Button
+        android:id="@+id/button_maiar_clothing_pack"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/maiar_clothing_pack"
+        android:layout_marginBottom="8dp" />
+
+    <Button
+        android:id="@+id/button_maiar_raid_alarm"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/maiar_raid_alarm"
+        android:layout_marginBottom="8dp" />
+
+    <Button
+        android:id="@+id/button_maiar_stimpacks_v2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/maiar_stimpacks_v2"
+        android:layout_marginBottom="8dp" />
+
+    <Button
+        android:id="@+id/button_maiar_teleportation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/maiar_teleportation"
+        android:layout_marginBottom="8dp" />
+
+    <Button
+        android:id="@+id/button_maiars_kits"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/maiars_kits"
+        android:layout_marginBottom="8dp" />
+
+    <Button
+        android:id="@+id/button_maiars_trader_days"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/maiars_trader_days"
+        android:layout_marginBottom="8dp" />
+
+    <Button
+        android:id="@+id/button_portfolio"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/portfolio" />
+
+</LinearLayout>

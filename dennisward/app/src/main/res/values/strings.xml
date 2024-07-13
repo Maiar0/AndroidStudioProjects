@@ -1,0 +1,69 @@
+<resources>
+    <string name="app_name">Resume</string>
+    <!-- Contact Button -->
+    <string name="contact_button">Contact!</string>
+
+    <!-- Contact Information -->
+    <string name="contact_label">CONTACT</string>
+    <string name="phone">479-652-2525</string>
+    <string name="email">Dennis.Ward2nd@gmail.com</string>
+    <string name="address">2708 Brooken Hill Drive, Fort Smith, AR</string>
+
+    <!-- Skills -->
+    <string name="skills_label">SKILLS</string>
+    <string name="skill_problem_solving">Problem Solving</string>
+    <string name="skill_programming">Programming</string>
+    <string name="skill_adaptability">Adaptability</string>
+    <string name="skill_leadership_teamwork">Leadership &amp; Teamwork</string>
+    <string name="skill_communication">Communication</string>
+    <string name="skill_teamwork">Teamwork</string>
+
+    <!-- Profile -->
+    <string name="profile_label">PROFILE</string>
+    <string name="profile_description">Motivated individual with nearly a decade of self-taught programming experience and a strong problem-solving aptitude. Currently pursuing a Computer Science degree in Software Engineering to complement my technical skills. Proven track record of collaborative teamwork and idea exchange during my nine years at Quantum Plastics. Adept at troubleshooting, programming, and system administration, as evidenced by my three-year involvement in the game modification community, specifically with DayZ. Successfully managed commissioned mods and cultivated a thriving gaming community, showcasing leadership and organizational prowess. Seeking to leverage my analytical mindset, organizational skills, and technical aptitude to excel as a Technical Analyst – Application Development Support at ArcBest, contributing to the company\'s innovative logistics solutions and complex supply chain challenges.</string>
+
+    <!-- Work Experience -->
+    <string name="work_experience_label">WORK EXPERIENCE</string>
+    <string name="maiar_dev">Maiar Development DayZ</string>
+    <string name="self_taught_software_engineer">Self-Taught Software Engineer</string>
+    <string name="year_2019_2022">2019-2022</string>
+    <string name="maiar_dev_description">Problem Solving: Modified the game DayZ to create additional features, bug fixes, gameplay balance, and community engagement. Programming: Created dozens of commissioned mods for DayZ working in Enforce Script(C#) programming language. Administration: Managed one of the largest DayZ communities for which I created many of the aspects of the gaming environment. Collaboration: Worked with other community leaders on larger projects.</string>
+    <string name="quantum_plastics">Quantum Plastics</string>
+    <string name="quantum_plastics_roles">Process Technician/Supervisor</string>
+    <string name="year_2014_2023">2014-2023</string>
+    <string name="quantum_plastics_description">Supervise operators to maintain production schedule. Work with the production team to achieve production goals. Set up and troubleshoot injection-molding machines to cast products from thermoplastic materials, to meet standard cycle times and quality requirements.</string>
+
+    <!-- Education -->
+    <string name="education_label">EDUCATION</string>
+    <string name="assoc_sci_eng">Associate of Science in Engineering</string>
+    <string name="university_arkansas">University of Arkansas - Fort Smith</string>
+    <string name="year_2017_2020">2017-2020</string>
+    <string name="gpa_3_53">GPA 3.53</string>
+    <string name="bachelor_sci_eng">Bachelor of Computer Science - Software Engineering</string>
+    <string name="southern_new_hampshire">Southern New Hampshire University</string>
+    <string name="year_2023_present">2023-Present</string>
+    <string name="gpa_4_0">GPA 4.0 Expected Summer 2025</string>
+
+    <!-- References -->
+    <string name="references_label">REFERENCES</string>
+    <string name="reference_kenneth_tedford">Kenneth Tedford - Quantum Plastics</string>
+    <string name="phone_kenneth">479-561-6948</string>
+    <string name="supervisor_kenneth">Supervisor</string>
+    <string name="reference_daniel_viles">Daniel Viles - Quantum Plastics</string>
+    <string name="phone_daniel">479-217-1820</string>
+    <string name="supervisor_daniel">Supervisor</string>
+    <string name="reference_nathan_ulmer">Nathan Ulmer - ArcBest</string>
+    <string name="phone_nathan">479-462-2448</string>
+    <string name="supervisor_nathan">Supervisor</string>
+    <!-- Resources Buttons -->
+    <string name="extraction_safe_zones">Extraction Safe Zones</string>
+    <string name="extraction_safe_zone_desc">Extraction SafeZone</string>
+    <string name="key_cards">KeyCards Mod</string>
+    <string name="maiar_clothing_pack">Clothing Pack</string>
+    <string name="maiar_raid_alarm">Raid Alarm</string>
+    <string name="maiar_stimpacks_v2">Stimpacks</string>
+    <string name="maiar_teleportation">Teleportation</string>
+    <string name="maiars_kits">Kits</string>
+    <string name="maiars_trader_days">TraderDays</string>
+    <string name="portfolio">Portfolio</string>
+</resources>

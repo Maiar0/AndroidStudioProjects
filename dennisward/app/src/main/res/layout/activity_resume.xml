@@ -1,0 +1,332 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="16dp">
+
+        <!-- Name and Title -->
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <Button
+                android:id="@+id/contact_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/contact_button"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginEnd="8dp" />
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toEndOf="@id/contact_button"
+                android:layout_centerHorizontal="true">
+
+                <TextView
+                    android:id="@+id/name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="DENNIS WARD"
+                    android:textSize="24sp"
+                    android:textStyle="bold"
+                    android:gravity="center"
+                    android:layout_gravity="center" />
+
+                <TextView
+                    android:id="@+id/title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Technical Analyst"
+                    android:textSize="18sp"
+                    android:gravity="center"
+                    android:layout_gravity="center"
+                    android:paddingBottom="16dp" />
+            </LinearLayout>
+        </RelativeLayout>
+
+        <!-- Skills Section -->
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="6dp">
+
+            <!-- First Column -->
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:padding="8dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/skills_label"
+                    android:textStyle="bold"
+                    android:paddingBottom="8dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/skill_problem_solving"
+                    android:paddingTop="4dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/skill_programming"
+                    android:paddingTop="4dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/skill_adaptability"
+                    android:paddingTop="4dp" />
+            </LinearLayout>
+
+            <!-- Second Column -->
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:padding="6dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/skill_leadership_teamwork"
+                    android:paddingTop="28dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/skill_communication"
+                    android:paddingTop="4dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/skill_teamwork"
+                    android:paddingTop="4dp" />
+            </LinearLayout>
+        </LinearLayout>
+
+
+
+        <!-- Profile Section -->
+        <TextView
+            android:id="@+id/profile_label"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/profile_label"
+            android:textStyle="bold"
+            android:paddingBottom="8dp"
+            android:paddingTop="16dp" />
+
+        <TextView
+            android:id="@+id/profile_description"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/profile_description" />
+
+        <!-- Work Experience -->
+        <TextView
+            android:id="@+id/work_experience_label"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/work_experience_label"
+            android:textStyle="bold"
+            android:paddingTop="16dp"
+            android:paddingBottom="8dp" />
+
+        <TextView
+            android:id="@+id/maiar_dev"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/maiar_dev"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/self_taught_software_engineer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/self_taught_software_engineer"
+            android:paddingBottom="4dp" />
+
+        <TextView
+            android:id="@+id/year_2019_2022"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/year_2019_2022" />
+
+        <TextView
+            android:id="@+id/maiar_dev_description"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/maiar_dev_description" />
+
+        <!-- Add other work experience similarly -->
+        <TextView
+            android:id="@+id/quantum_plastics"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/quantum_plastics"
+            android:textStyle="bold"
+            android:paddingTop="16dp"
+            android:paddingBottom="8dp" />
+
+        <TextView
+            android:id="@+id/quantum_plastics_roles"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/quantum_plastics_roles" />
+
+        <TextView
+            android:id="@+id/year_2014_2023"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/year_2014_2023" />
+
+        <TextView
+            android:id="@+id/quantum_plastics_description"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/quantum_plastics_description" />
+
+        <!-- Education Section -->
+        <TextView
+            android:id="@+id/education_label"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/education_label"
+            android:textStyle="bold"
+            android:paddingTop="16dp"
+            android:paddingBottom="8dp" />
+
+        <TextView
+            android:id="@+id/assoc_sci_eng"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/assoc_sci_eng" />
+
+        <TextView
+            android:id="@+id/university_arkansas"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/university_arkansas"
+            android:paddingBottom="4dp" />
+
+        <TextView
+            android:id="@+id/year_2017_2020"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/year_2017_2020" />
+
+        <TextView
+            android:id="@+id/gpa_3_53"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/gpa_3_53" />
+
+        <TextView
+            android:id="@+id/bachelor_sci_eng"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/bachelor_sci_eng" />
+
+        <TextView
+            android:id="@+id/southern_new_hampshire"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/southern_new_hampshire"
+            android:paddingBottom="4dp" />
+
+        <TextView
+            android:id="@+id/year_2023_present"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/year_2023_present" />
+
+        <TextView
+            android:id="@+id/gpa_4_0"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/gpa_4_0" />
+
+        <!-- References Section -->
+        <TextView
+            android:id="@+id/references_label"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/references_label"
+            android:textStyle="bold"
+            android:paddingTop="16dp"
+            android:paddingBottom="8dp" />
+
+        <TextView
+            android:id="@+id/reference_kenneth_tedford"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/reference_kenneth_tedford" />
+
+        <TextView
+            android:id="@+id/phone_kenneth"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/phone_kenneth" />
+
+        <TextView
+            android:id="@+id/supervisor_kenneth"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/supervisor_kenneth" />
+
+        <TextView
+            android:id="@+id/reference_daniel_viles"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/reference_daniel_viles"
+            android:paddingTop="8dp" />
+
+        <TextView
+            android:id="@+id/phone_daniel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/phone_daniel" />
+
+        <TextView
+            android:id="@+id/supervisor_daniel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/supervisor_daniel" />
+
+        <TextView
+            android:id="@+id/reference_nathan_ulmer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/reference_nathan_ulmer"
+            android:paddingTop="8dp" />
+
+        <TextView
+            android:id="@+id/phone_nathan"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/phone_nathan" />
+
+        <TextView
+            android:id="@+id/supervisor_nathan"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/supervisor_nathan" />
+    </LinearLayout>
+</ScrollView>

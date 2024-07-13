@@ -1,0 +1,50 @@
+<resources>
+    <string name="app_name">The Band Database</string>
+    <string name="details">Details</string>
+
+    <string-array name="bands">
+        <item>The Beatles</item>
+        <item>Nirvana</item>
+        <item>U2</item>
+        <item>Queen</item>
+        <item>Pink Floyd</item>
+        <item>Led Zeppelin</item>
+        <item>The Rolling Stones</item>
+        <item>AC/DC</item>
+        <item>Metallica</item>
+        <item>The Who</item>
+        <item>Guns N Roses</item>
+        <item>The Doors</item>
+        <item>The Eagles</item>
+        <item>Radiohead</item>
+        <item>Red Hot Chili Peppers</item>
+        <item>Green Day</item>
+        <item>Foo Fighters</item>
+        <item>Coldplay</item>
+        <item>Linkin Park</item>
+        <item>Imagine Dragons</item>
+    </string-array>
+
+    <string-array name="descriptions">
+        <item>An English rock band that formed in Liverpool in 1960.</item>
+        <item>An American rock band that formed in Washington in 1987.</item>
+        <item>An Irish rock band from Dublin that formed in 1976.</item>
+        <item>A British rock band formed in London in 1970.</item>
+        <item>An English rock band formed in London in 1965.</item>
+        <item>An English rock band formed in London in 1968.</item>
+        <item>An English rock band formed in London in 1962.</item>
+        <item>An Australian rock band formed in Sydney in 1973.</item>
+        <item>An American heavy metal band formed in Los Angeles in 1981.</item>
+        <item>An English rock band formed in London in 1964.</item>
+        <item>An American hard rock band formed in Los Angeles in 1985.</item>
+        <item>An American rock band formed in Los Angeles in 1965.</item>
+        <item>An American rock band formed in Los Angeles in 1971.</item>
+        <item>An English rock band formed in Abingdon in 1985.</item>
+        <item>An American rock band formed in Los Angeles in 1983.</item>
+        <item>An American punk rock band formed in East Bay, California, in 1987.</item>
+        <item>An American rock band formed in Seattle in 1994.</item>
+        <item>A British rock band formed in London in 1996.</item>
+        <item>An American rock band formed in Agoura Hills, California, in 1996.</item>
+        <item>An American pop rock band formed in Las Vegas, Nevada, in 2008.</item>
+    </string-array>
+</resources>
