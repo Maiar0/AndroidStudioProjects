@@ -6,6 +6,13 @@
     android:padding="16dp">
 
     <Button
+        android:id="@+id/button_this_application"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/this_application"
+        android:layout_marginBottom="8dp" />
+
+    <Button
         android:id="@+id/button_extraction_safe_zones"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"

@@ -56,6 +56,7 @@
     <string name="phone_nathan">479-462-2448</string>
     <string name="supervisor_nathan">Supervisor</string>
     <!-- Resources Buttons -->
+    <string name="this_application">This Application!</string>
     <string name="extraction_safe_zones">Extraction Safe Zones</string>
     <string name="extraction_safe_zone_desc">Extraction SafeZone</string>
     <string name="key_cards">KeyCards Mod</string>

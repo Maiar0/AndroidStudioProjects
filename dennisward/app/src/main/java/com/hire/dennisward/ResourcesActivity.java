@@ -14,6 +14,7 @@ public class ResourcesActivity extends AppCompatActivity {
         setContentView(R.layout.activity_resources);
 
         // Set up button click listeners
+        setUpWebView(R.id.button_this_application, "https://github.com/Maiar0/AndroidStudioProjects/tree/main/dennisward");
         setUpGithubView(R.id.button_extraction_safe_zones, "https://github.com/Maiar0/Portfolio/tree/main/DayZ%20Mods/ExtractionSafeZones", "https://youtu.be/kh62tO2i2l4?si=ImIab9V4HuOBD4fv");
         setUpGithubView(R.id.button_key_cards, "https://github.com/Maiar0/Portfolio/tree/main/DayZ%20Mods/KeyCards", "https://youtu.be/ENcGT9GphOU?si=AYtp8davKuriAZRO");
         setUpGithubView(R.id.button_maiar_clothing_pack, "https://github.com/Maiar0/Portfolio/tree/main/DayZ%20Mods/Maiar_ClothingPack", "https://youtu.be/fj3S-C97j-0?si=yrwLKSSGyfnCC_-3");
