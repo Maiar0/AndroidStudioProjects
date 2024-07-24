@@ -122,8 +122,17 @@ public class SnakeHead {
     }
 
     public boolean checkCollision(Collidable collidable) {
-        RectF headRect = new RectF(x - radius, y - radius, x + radius, y + radius);
+        if (collidable == null) {
+            return false;
+        }
+
         RectF collRect = collidable.getBounds();
+        if (collRect == null) {
+            return false;
+        }
+
+        RectF headRect = new RectF(x - radius, y - radius, x + radius, y + radius);
+
         return RectF.intersects(headRect, collRect);
     }
 

@@ -27,8 +27,6 @@ public class SnakeView extends SurfaceView implements Runnable {
     private SnakeHead snakeHead;
     private RectF playableArea;
     private int foodCount;
-    private int difficulty;
-    private int score;
     private boolean isInit = false;
     private SnakeActivity snakeActivity;
     private float speed = 10.0f;
@@ -74,7 +72,6 @@ public class SnakeView extends SurfaceView implements Runnable {
         playableArea = getPlayingArea(5.0f);
 
         if(playableArea != null){
-            //Log.d("aklsjlkd","Playable: " + playableArea.toString());
             float foodX = playableArea.left + (float) (Math.random() * (playableArea.width()));
             float foodY = playableArea.top + (float) (Math.random() * (playableArea.height()));
             float foodRadius = 40;
