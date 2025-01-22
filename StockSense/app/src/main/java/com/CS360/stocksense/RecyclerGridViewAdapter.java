@@ -9,16 +9,17 @@ import android.widget.Button;
 import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
-import com.CS360.stocksense.Database.Items;
+import com.CS360.stocksense.models.Item;
+
 import java.util.List;
 
 public class RecyclerGridViewAdapter extends RecyclerView.Adapter<RecyclerGridViewAdapter.ViewHolder> {
 
-    private List<Items> itemsList; // List of items to display
+    private List<Item> itemsList; // List of items to display
     private int itemid;
     private Context context; // Context for launching activities
 
-    public RecyclerGridViewAdapter(List<Items> itemsList, Context context) {
+    public RecyclerGridViewAdapter(List<Item> itemsList, Context context) {
         this.itemsList = itemsList;
         this.context = context;
     }
@@ -34,7 +35,7 @@ public class RecyclerGridViewAdapter extends RecyclerView.Adapter<RecyclerGridVi
     @Override
     public void onBindViewHolder(@NonNull ViewHolder holder, int position) {
         // Bind data to the ViewHolder
-        Items item = itemsList.get(position);
+        Item item = itemsList.get(position);
         itemid = item.getId();
         holder.itemName.setText(item.getItemName());
         holder.itemQuantity.setText("Q: " + item.getQuantity());
@@ -64,7 +65,7 @@ public class RecyclerGridViewAdapter extends RecyclerView.Adapter<RecyclerGridVi
         return itemsList.size(); // Return the total number of items
     }
 
-    public void updateData(List<Items> newItemsList) {
+    public void updateData(List<Item> newItemsList) {
         // Update the data and notify adapter about data change
         this.itemsList = newItemsList;
         notifyDataSetChanged();
@@ -84,7 +85,7 @@ public class RecyclerGridViewAdapter extends RecyclerView.Adapter<RecyclerGridVi
         }
     }
 
-    public List<Items> getItemsList() {
+    public List<Item> getItemsList() {
         return itemsList; // Return the list of items
     }
 }

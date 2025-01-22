@@ -1,8 +1,6 @@
 package com.CS360.stocksense;
 
 import android.os.Bundle;
-import android.util.Log;
-import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
@@ -11,25 +9,19 @@ import android.content.Intent;
 import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.app.NavUtils;
-import com.CS360.stocksense.Database.AppDatabase;
-import com.CS360.stocksense.Database.Items;
 
 public class ItemDetailsActivity extends AppCompatActivity {
 
     private TextView itemHeader;
     private EditText itemQuantity, itemLocation, itemAlertLevel;
     private Button saveButton, deleteButton;
-    private AppDatabase db;
     private int itemId;
-    private Items currentItem;
     private String sourceActivity;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_item_details);
-
-        db = AppDatabase.getInstance(this);
 
         itemHeader = findViewById(R.id.item_header);
         itemQuantity = findViewById(R.id.item_quantity);
@@ -54,16 +46,17 @@ public class ItemDetailsActivity extends AppCompatActivity {
     public boolean onSupportNavigateUp() {
         Intent intent;
         if ("ListView".equals(sourceActivity)) {
-            intent = new Intent(this, DatabaseViewActivity.class);
+            intent = new Intent(this, TableViewActivity.class);
         } else {
-            intent = new Intent(this, InventoryGridViewActivity.class);
+            intent = new Intent(this, GridViewActivity.class);
         }
         NavUtils.navigateUpTo(this, intent);
         return true;
     }
 
     private void loadItemDetails(int itemId) {
-        new Thread(() -> {
+        //TODO:: implement
+        /*new Thread(() -> {
             currentItem = db.itemsDao().getItemById(itemId); // Fetch item by id
             runOnUiThread(() -> {
                 if (currentItem != null) {
@@ -76,11 +69,12 @@ public class ItemDetailsActivity extends AppCompatActivity {
                     finish();
                 }
             });
-        }).start();
+        }).start();*/
     }
 
     private void onSaveButtonClick() {
-        new Thread(() -> {
+        //TODO:: Implement
+        /*new Thread(() -> {
             try {
                 int currentQuantity = currentItem.getQuantity();
                 int newQuantity = Integer.parseInt(itemQuantity.getText().toString());
@@ -98,7 +92,7 @@ public class ItemDetailsActivity extends AppCompatActivity {
             } catch (Exception e) {
                 runOnUiThread(() -> showToast("Error saving item"));
             }
-        }).start();
+        }).start();*/
     }
 
     private void onDeleteButtonClick() {
@@ -107,7 +101,7 @@ public class ItemDetailsActivity extends AppCompatActivity {
                 .setMessage("Are you sure you want to delete this item?")
                 .setPositiveButton(android.R.string.yes, (dialog, which) -> {
                     new Thread(() -> {
-                        db.itemsDao().delete(currentItem); // Delete item from the database
+                        //TODO:: // Delete item from the database
                         runOnUiThread(() -> {
                             showToast("Item deleted successfully");
                             finish();

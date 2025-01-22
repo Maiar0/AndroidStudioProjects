@@ -3,9 +3,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     package="com.CS360.stocksense">
 
-    <uses-permission android:name="android.permission.SEND_SMS" />
-
-    <uses-feature android:name="android.hardware.telephony" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
 
     <application
         android:allowBackup="true"
@@ -18,16 +17,19 @@
         android:theme="@style/Theme.StockSense"
         tools:targetApi="31">
         <activity
-            android:name=".ItemDetailsActivity"
-            android:exported="false"/>
+            android:name=".DbSelectionView"
+            android:exported="false" />
         <activity
-            android:name=".DatabaseViewActivity"
+            android:name=".ItemDetailsActivity"
+            android:exported="false" />
+        <activity
+            android:name=".TableViewActivity"
             android:exported="false" />
         <activity
             android:name=".MainActivity"
             android:exported="false" />
         <activity
-            android:name=".InventoryGridViewActivity"
+            android:name=".GridViewActivity"
             android:exported="false" />
         <activity
             android:name=".LoginActivity"

@@ -9,49 +9,34 @@ import android.widget.Button;
 import android.widget.Toast;
 import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
-import androidx.work.PeriodicWorkRequest;
-import androidx.work.WorkManager;
-import androidx.work.WorkRequest;
-import com.CS360.stocksense.Database.AppDatabase;
-import com.CS360.stocksense.Database.Items;
+
 import com.google.android.material.textfield.TextInputEditText;
-import java.util.concurrent.TimeUnit;
 
 public class MainActivity extends AppCompatActivity {
 
-    protected AppDatabase db; // Database instance
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        db = AppDatabase.getInstance(this); // Initialize database instance
-
         findViewById(R.id.nav_button1).setOnClickListener(v -> onNavButton1Click()); // Set click listener for button 1
         findViewById(R.id.nav_button2).setOnClickListener(v -> onNavButton2Click()); // Set click listener for button 2
         findViewById(R.id.nav_button3).setOnClickListener(v -> onNavButton3Click()); // Set click listener for button 3
 
-        setupLowInventoryWorker(); // Setup worker for low inventory checks
-    }
-
-    private void setupLowInventoryWorker() {
-        // Setup periodic work request for low inventory checks
-        WorkRequest workRequest = new PeriodicWorkRequest.Builder(LowInventoryWorker.class, 1, TimeUnit.HOURS)
-                .build();
-        WorkManager.getInstance(this).enqueue(workRequest);
+        Log.d("OnInstantiate", "MainAcitivty ");
     }
 
     protected void onNavButton1Click() {
         // Navigate to InventoryGridViewActivity
-        Intent intent = new Intent(this, InventoryGridViewActivity.class);
+        Intent intent = new Intent(this, GridViewActivity.class);
         startActivity(intent);
         Log.d("MainActivity", "Navigated to InventoryGridViewActivity");
     }
 
     protected void onNavButton2Click() {
         // Navigate to DatabaseViewActivity
-        Intent intent = new Intent(this, DatabaseViewActivity.class);
+        Intent intent = new Intent(this, TableViewActivity.class);
         startActivity(intent);
         Log.d("MainActivity", "Navigated to DatabaseViewActivity");
     }
@@ -114,8 +99,7 @@ public class MainActivity extends AppCompatActivity {
 
     private void createNewItem(int id, String name, int quantity, String location, int alertLevel) {
         new Thread(() -> {
-            Items newItem = new Items(id, name, quantity, location, alertLevel);
-            db.itemsDao().insert(newItem); // Insert new item into the database
+            //TODO: CREATE ITEM IMPLEMENTAION
             runOnUiThread(() -> {
                 onNewItemCreated(); // Notify that a new item has been created
                 showToast("Item created successfully"); // Show success message
